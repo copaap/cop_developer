@@ -1,0 +1,149 @@
+
+
+.contactSection {
+  padding: 0px 120px 100px 120px;
+  background: linear-gradient(to bottom, #f4f4f4, #eaeaea);
+
+}
+
+
+.container {
+  
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+  height: auto;
+  padding: 0px;
+
+   
+}
+
+/* TEXTO */
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+   filter: blur(8px) ;
+  transform: scale(1.06);
+  opacity: 0.8;
+  animation: videoReveal2 1.2s ease-out forwards;
+   animation-delay: 0.4s ;
+}
+@keyframes videoReveal2 {
+  to{
+    filter: blur(0);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+.title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #111;
+}
+
+.subtitle {
+  color: #555;
+  font-size: 16px;
+  max-width: 400px;
+}
+
+/* TARJETAS */
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 18px;
+  text-decoration: none;
+  color: #111;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.05);
+  border: 1px solid #e5e5e5;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+}
+
+.card span {
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: #777;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.card h3 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* MAPA */
+.mapContainer {
+  height: 100vh;
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 0 30px 60px rgba(0,0,0,0.1);
+  transform: perspective(1200px) rotateY(-5deg);
+  transition: 0.5s ease;
+  background: linear-gradient(to bottom, #f4f4f4, #eaeaea);
+       filter: blur(8px) ;
+  transform: scale(1);
+  opacity: 0.8;
+  animation: videoReveal2 1.2s ease-out forwards;
+   animation-delay: 0.4s ;
+
+}
+@keyframes videoReveal2 {
+  to{
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+
+.mapContainer:hover {
+  transform: perspective(1200px) rotateY(0deg) scale(1.02);
+}
+
+.mapContainer iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  filter: grayscale(100%) contrast(110%);
+
+}
+
+
+/* RESPONSIVE */
+@media (max-width: 1000px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .mapContainer {
+    transform: none;
+    height: 350px;
+  }
+}
+
+@media (max-width:1024px) {
+  .contactSection {
+  padding: 80px 120px;
+}
+}
+
+@media screen and (max-width:700px) {
+		.contactSection {
+  padding: 80px 40px;
+}
+
+    
+	}

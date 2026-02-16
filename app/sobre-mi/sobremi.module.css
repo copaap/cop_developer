@@ -1,0 +1,194 @@
+.container {
+  padding: 120px 80px;
+  background: #f9f9f9;
+  min-height: 100vh;
+  color: black;
+}
+
+/* Header */
+
+.header {
+  margin-bottom: 60px;
+  
+  filter: blur(8px) ;
+  transform: scale(1.06);
+  opacity: 0.8;
+  animation: videoReveal2 1.2s ease-out forwards;
+   animation-delay: 0.4s ;
+}
+@keyframes videoReveal2 {
+  to{
+    filter: blur(0);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: black;
+}
+
+.subtitle {
+  color: #666;
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+
+/* Resumen */
+
+.summary {
+  max-width: 900px;
+  margin-bottom: 80px;
+  line-height: 1.7;
+  color: #444;
+  font-size: 1rem;
+filter: blur(8px) ;
+  transform: scale(1.06);
+  opacity: 0.8;
+  animation: videoReveal2 1.2s ease-out forwards;
+   animation-delay: 0.4s ;
+}
+
+@keyframes videoReveal {
+  to{
+    filter: blur(0);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Grid */
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  filter: blur(8px) ;
+  transform: scale(1.06);
+  opacity: 0.8;
+  animation: videoReveal2 1.2s ease-out forwards;
+   animation-delay: 0.4s ;
+}
+
+/* Column */
+
+.column h2 {
+  font-size: 1.4rem;
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+
+/* Card experiencia */
+
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  object-fit: cover;
+
+  filter: blur(8px) ;
+  transform: scale(1.06);
+  opacity: 0.8;
+  animation: videoReveal 1.2s ease-out forwards;
+   animation-delay: 0.4s ;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.08);
+}
+
+.card h3 {
+  margin-bottom: 5px;
+
+}
+@keyframes videoReveal {
+  to{
+    filter: blur(0);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.meta {
+  font-size: 0.9rem;
+  color: #888;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.card ul {
+  padding-left: 18px;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Skills */
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 40px;
+}
+
+.skills span {
+  padding: 8px 16px;
+  background: white;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+  color: #111;
+}
+
+.skills span:hover {
+  transform: translateY(-3px);
+}
+
+/* Botón */
+
+.cvButton {
+ padding: 8px 55px;
+  background: linear-gradient(135deg, rgba(0,0,0,0.65), rgba(40,40,40,0.8));
+  color: white;
+  border-radius: 25px;
+  font-size: 1.1rem;
+  width: fit-content;
+  margin: 0 auto;
+  cursor: pointer;
+  border: 1px solid rgba(255,255,255,0.15);
+  transition: all 0.8s ease !important;
+}
+
+.cvButton:hover {
+  transform: translateY(-3px) !important;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4) !important;
+  background: linear-gradient(135deg, #000, #444) !important;
+}
+
+
+/* Responsive */
+
+@media (max-width:1024px) {
+   .container {
+    padding: 100px;
+    min-height: auto;
+  }
+}
+
+@media (max-width: 700px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .container {
+    padding: 100px 30px;
+  }
+}
