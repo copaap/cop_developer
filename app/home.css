@@ -248,6 +248,9 @@ text-align: center;
 
 
 @media (max-width:1024px) {
+  .banner{
+    height: auto ;
+  }
   .card{
     flex: 0 0 47%;
   }
@@ -265,18 +268,13 @@ text-align: center;
 }
 }
 
-@media (max-width:1024px){
-  .banner{
-    height: auto;
-  }
-  
-}
+
 
 @media (max-width:700px) {
 		.banner{
       flex-direction: column;
       padding: 20px 10px;
-      height: 100vh;
+      height: auto;
     }
     .banner::before {
   top: 0%;
