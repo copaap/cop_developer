@@ -19,9 +19,9 @@ export default function Footer() {
         <div className={styles.links}>
           <h4>Navegación</h4>
           <Link href="/">Inicio</Link>
-          <a href="#proyectos">Proyectos</a>
+          <a href="/#proyectos">Proyectos</a>
           <Link href="/sobre-mi">Sobre mí</Link>
-          <a href="#contacto">Contacto</a>
+          <Link href="/contacto">Contacto</Link>
         </div>
 
         {/* Columna 3 */}
